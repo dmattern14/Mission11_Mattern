@@ -68,3 +68,4 @@
 /Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/obj/Debug/net8.0/Mission11_Mattern.API.pdb
 /Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/obj/Debug/net8.0/Mission11_Mattern.API.genruntimeconfig.cache
 /Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/obj/Debug/net8.0/ref/Mission11_Mattern.API.dll
+/Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/obj/Debug/net8.0/Mission11_Mattern.API.sourcelink.json
