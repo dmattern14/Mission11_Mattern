@@ -9,7 +9,7 @@ function Header() {
   return (
       <header 
           className="bg-primary text-white text-center py-4 shadow"
-          style={{ width: "90vw", position: "relative" }}
+          style={{ width: "80vw", position: "relative" }}
       >
           <h1 className="display-4 fw-bold">
               📚 Book List
