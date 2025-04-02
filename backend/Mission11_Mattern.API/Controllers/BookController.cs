@@ -17,16 +17,19 @@ namespace Mission11_Mattern.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetBooks(int pageHowMany = 10, int pageNum = 1, string sortOrder = "asc")
+        public IActionResult GetBooks([FromQuery] List<string> Category, int pageHowMany = 10, int pageNum = 1, string sortOrder = "asc")
         {
             var booksQuery = _context.Books.AsQueryable();
 
-            // Apply Sorting to the Entire Dataset
+            if (Category != null && Category.Any())
+            {
+                booksQuery = booksQuery.Where(b => Category.Contains(b.Category));
+            }
+
             booksQuery = sortOrder.ToLower() == "asc"
                 ? booksQuery.OrderBy(b => b.Title)
                 : booksQuery.OrderByDescending(b => b.Title);
 
-            // Apply Pagination AFTER Sorting
             var totalBooks = booksQuery.Count();
             var books = booksQuery
                 .Skip((pageNum - 1) * pageHowMany)
@@ -41,6 +44,15 @@ namespace Mission11_Mattern.API.Controllers
         }
 
 
-        
+        [HttpGet("GetBookCategories")]
+        public IActionResult GetBookCategories()
+        {
+            var bookTypes = _context.Books
+                .Select(p => p.Category)
+                .Distinct()
+                .ToList();
+            
+            return Ok(bookTypes);
+        }
     }
 }
