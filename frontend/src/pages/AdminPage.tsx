@@ -10,7 +10,7 @@ const AdminPage = () => {
   const [pageSize, setPageSize] = useState<number>(10);
   const [pageNum, setPageNum] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(0);
-  const [isAscending, setIsAscending] = useState<boolean>(true);
+  const [isAscending] = useState<boolean>(true);
   const [selectedCategories] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
