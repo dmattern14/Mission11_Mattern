@@ -1,33 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import BookList from './BookList'
 
 import './App.css'
+import ProjectsPage from './pages/ProjectsPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DonatePage from './pages/DonatePage';
+import CartPage from './pages/CartPage';
+import { CartProvider } from './context/CartContext';
+import AdminPage from './pages/AdminPage';
 
-function Header() {
-  return (
-      <header 
-          className="bg-primary text-white text-center py-4 shadow"
-          style={{ width: "80vw", position: "relative" }}
-      >
-          <h1 className="display-4 fw-bold">
-              📚 Book List
-          </h1>
-          <p className="lead">Explore our collection of amazing books</p>
-      </header>
-  );
-}
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <Header />
-      <BookList />
+    <CartProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ProjectsPage />} />
+        <Route path="/donate/:title/:bookId/:price" element={<DonatePage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/admin" element={<AdminPage />} />
+      </Routes>
+    </Router>
+    </CartProvider>
+    
     </>
-  )
+  );
 }
 
-export default App
+export default App;
