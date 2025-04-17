@@ -70,3 +70,9 @@
 /Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/obj/Debug/net8.0/ref/Mission11_Mattern.API.dll
 /Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/obj/Debug/net8.0/Mission11_Mattern.API.sourcelink.json
 /Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/bin/Debug/net8.0/Bookstore.sqlite
+/Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/bin/Debug/net8.0/publish/web.config
+/Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/bin/Debug/net8.0/publish/appsettings.Development.json
+/Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/bin/Debug/net8.0/publish/appsettings.json
+/Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/bin/Debug/net8.0/publish/Mission11_Mattern.API.deps.json
+/Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/bin/Debug/net8.0/publish/Mission11_Mattern.API.runtimeconfig.json
+/Users/dmattern/Desktop/Mission11_Mattern/backend/Mission11_Mattern.API/bin/Debug/net8.0/publish/Mission11_Mattern.API.staticwebassets.endpoints.json
