@@ -75,7 +75,7 @@ export const fetchBooks = async (
 
             export const deleteBook = async (bookId: number): Promise<void> => {
                 try {
-                    const response = await fetch(`https://bookproject-mattern-backend-b0ejc7c4bje7huc7.eastus-01.azurewebsites.net/api/Book/Delete/${bookId}`, {
+                    const response = await fetch(`https://mission13-mattern-a6e8dsd7gkh7f4ht.westus2-01.azurewebsites.net/api/Book/Delete/${bookId}`, {
                         method: "DELETE",
                         credentials: "include",
                     });
